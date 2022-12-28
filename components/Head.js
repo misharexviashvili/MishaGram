@@ -6,7 +6,9 @@ export default function Head() {
     <View style={styles.container}>
       <View>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <Text style={styles.text}>MishaGram</Text>
+          <Text style={styles.text}>
+            MishaGram &#8964;
+          </Text>
           <View style={styles.imageContainer}>
             <Image
               style={styles.image}
@@ -44,7 +46,6 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flexDirection: "row",
-    gap: 210,
   },
   image: {
     width: 30,

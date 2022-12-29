@@ -3,7 +3,6 @@ import {
   Text,
   View,
   Image,
-  FlatList,
   ScrollView,
 } from "react-native";
 import ImageCarousel from "./ImageCarousel";

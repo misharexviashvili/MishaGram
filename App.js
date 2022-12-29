@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { SafeAreaView, StyleSheet } from "react-native";
 import Head from "./components/Head";
 import Feed from "./components/Feed";
-import ImageCarousel from "./components/ImageCarousel";
 import { useFonts } from "expo-font";
 export default function App() {
   const [fontsLoaded] = useFonts({

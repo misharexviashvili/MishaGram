@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   text: {
     color: "black",
     fontSize: 25,
+    fontFamily:"BeautifulPeople"
   },
   imageContainer: {
     flexDirection: "row",

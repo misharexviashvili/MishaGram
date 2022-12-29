@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 
 export default function Head() {
@@ -47,7 +46,7 @@ const styles = StyleSheet.create({
   text: {
     color: "black",
     fontSize: 25,
-    fontFamily: "BeautifulPeople",
+    fontFamily: "Vegan",
   },
   imageContainer: {
     flexDirection: "row",

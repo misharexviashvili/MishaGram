@@ -1,13 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  FlatList,
-} from "react-native";
+import { StyleSheet, Text, View, Image, FlatList } from "react-native";
 
 export default function ImageCarousel() {
   const dummyData = [
@@ -64,7 +55,9 @@ export default function ImageCarousel() {
                   }}
                 />
               </View>
-              <Text style={[styles.text,item.self ? { color: "#000" } : {}]}>{item.name}</Text>
+              <Text style={[styles.text, item.self ? { color: "#000" } : {}]}>
+                {item.name}
+              </Text>
             </View>
           );
         }}
@@ -94,7 +87,7 @@ const styles = StyleSheet.create({
     height: 56,
     borderRadius: 50,
   },
-  text:{
-color:"#777"
-  }
+  text: {
+    color: "#777",
+  },
 });

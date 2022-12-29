@@ -1,12 +1,12 @@
-import { StatusBar } from "expo-status-bar";
 import { Fragment } from "react";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 import Head from "./components/Head";
+import Feed from "./components/Feed";
 import ImageCarousel from "./components/ImageCarousel";
 import { useFonts } from "expo-font";
 export default function App() {
   const [fontsLoaded] = useFonts({
-    BeautifulPeople: require("./assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf"),
+    Vegan: require("./assets/fonts/VeganStylePersonalUse-5Y58.ttf"),
   });
 
   if (!fontsLoaded) return;
@@ -15,9 +15,8 @@ export default function App() {
     <Fragment>
       <SafeAreaView style={styles.container}>
         <Head />
-        {/* <StatusBar style="auto" /> */}
       </SafeAreaView>
-      <ImageCarousel />
+      <Feed />
     </Fragment>
   );
 }

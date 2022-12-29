@@ -5,10 +5,14 @@ export default function Head() {
   return (
     <View style={styles.container}>
       <View>
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <Text style={styles.text}>
-            MishaGram &#8964;
-          </Text>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Text style={styles.text}>MishaGram &#8964;</Text>
           <View style={styles.imageContainer}>
             <Image
               style={styles.image}
@@ -43,7 +47,7 @@ const styles = StyleSheet.create({
   text: {
     color: "black",
     fontSize: 25,
-    fontFamily:"BeautifulPeople"
+    fontFamily: "BeautifulPeople",
   },
   imageContainer: {
     flexDirection: "row",

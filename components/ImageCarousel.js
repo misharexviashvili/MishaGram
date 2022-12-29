@@ -14,6 +14,7 @@ export default function ImageCarousel() {
     {
       uri: "https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445",
       name: "Your story",
+      self: true,
     },
     {
       uri: "https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-08/220805-border-collie-play-mn-1100-82d2f1.jpg",
@@ -53,7 +54,7 @@ export default function ImageCarousel() {
               <View
                 style={[
                   styles.roundSpace,
-                  item.story ? { borderColor: "red", borderWidth: 2 } : {},
+                  item.story ? { borderColor: "#eb4f34" } : {},
                 ]}
               >
                 <Image
@@ -63,7 +64,7 @@ export default function ImageCarousel() {
                   }}
                 />
               </View>
-              <Text>{item.name}</Text>
+              <Text style={[styles.text,item.self ? { color: "#000" } : {}]}>{item.name}</Text>
             </View>
           );
         }}
@@ -75,7 +76,7 @@ export default function ImageCarousel() {
 
 const styles = StyleSheet.create({
   scroll: {
-    paddingTop: 30,
+    paddingTop: 26,
   },
   imageTextContainer: {
     alignItems: "center",
@@ -93,4 +94,7 @@ const styles = StyleSheet.create({
     height: 56,
     borderRadius: 50,
   },
+  text:{
+color:"#777"
+  }
 });
